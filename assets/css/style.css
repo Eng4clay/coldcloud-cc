@@ -1,0 +1,152 @@
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a.cta {
+  background-color: #ffc107;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* قسم البطل */
+.hero {
+  background: linear-gradient(to right, #00bfff, #0077cc);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* النماذج */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* الرسائل التفاعلية */
+.error {
+  border-color: red !important;
+  background-color: #ffe6e6;
+}
+
+.success {
+  background-color: #e6ffe6;
+  border: 1px solid #2ecc71;
+}
+
+/* صناديق القوالب */
+.template-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.template-box h2 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+/* تذييل الصفحة */
+footer {
+  background-color: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* استجابة الهواتف */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
